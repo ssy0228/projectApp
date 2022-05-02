@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon-precomposed" href=".png">
+  <link rel="apple-touch-startup-image" href=".png">
+  <title>Mobile My Page</title>
+  <link rel="stylesheet" href="css/mypage.css">
+  <script src="js/loginOut.js"></script>
+  <script src="js/category.js"></script>
+  <script src="js/backtomain.js"></script>
+</head>
+<body>
+  <header>
+    <section id="header_inner">
+    <a href="#"><img src="images/goback.png" alt="go back"></a>
+    <h1>My Page</h1>
+    <a href="setting.html"><img src="images/settingbutton.png" alt="Setting"></a>      
+    </section>
+  </header>
+  <main>
+    <section class="content">
+      <a href="#" class="out">Sign Out</a>
+      <section class="user_profile">
+        <div class="user"></div>
+        <span class="name">EIVOR</span>
+        <ul>
+          <li><img src="images/like.png" alt="좋아요"><span>0</span></li>
+          <li><img src="images/friend.png" alt="팔로워"><span>0</span></li>
+          <li><img src="images/eco.png" alt="에코"><span>0</span></li>
+          <li><img src="images/bag.png" alt="찜"><span>0</span></li>
+        </ul>
+      </section>
+      <section class="page_list">
+        <ul>
+          <li><a href="#">회원정보 수정</a></li>
+          <li><a href="#">찜 list</a></li>
+          <li><a href="#">중고 거래</a></li>
+          <li><a href="#">무료 나눔</a></li>
+          <li><span>고객지원</span>
+            <ul>
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">자주 묻는 질문</a></li>
+              <li><a href="#">결제 정보</a></li>
+              <li><a href="#">배송 정보</a></li>
+              <li><a href="#">거래/나눔 Tip</a></li>
+              <li><a href="AI_cs.html">고객상담</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </section>
+  </main>
+  <div id="backdrop" class=""></div>
+  <footer>
+    <nav class="">
+      <ol>
+        <li class=""><button type="button">Self Interior</button>
+          <div class="ul_wrap">
+          <ul>
+            <li><a href="self_1.html">Self Interior 피드</a></li>
+            <li><a href="self_2.html">Self Interior 정보</a></li>
+            <li><a href="self_3.html">가구 및 소품 정보</a></li>
+          </ul>
+          </div>
+        </li>
+        <li class=""><button type="button">중고 거래</button>
+          <div class="ul_wrap">
+          <ul>
+            <li><a href="sellbuy_1.html">팔아요</a></li>
+            <li><a href="sellbuy_2.html">원해요</a></li>
+            <li><a href="sellbuy_3.html">중고 거래 후기</a></li>
+          </ul>
+          </div>
+        </li>
+        <li class=""><button type="button">무료 나눔</button>
+          <div class="ul_wrap">
+          <ul>
+            <li><a href="spliting_1.html">비워요</a></li>
+            <li><a href="spliting_2.html">채워요</a></li>
+            <li><a href="spliting_3.html">무료 나눔 후기</a></li>
+          </ul>
+          </div>
+        </li>
+      </ol>
+    </nav>
+    <section class="navigate">
+      <button type="button" class="category">category</button>
+      <a href="#" class="home">home</a>
+      <a href="mypage.html" class="mypage on">Mypage</a>
+    </section>
+  </footer>  
+</body>
+</html>

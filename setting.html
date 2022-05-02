@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon-precomposed" href=".png">
+  <link rel="apple-touch-startup-image" href=".png">
+  <title>Mobile Setting</title>
+  <link rel="stylesheet" href="css/setting.css">
+  <script src="js/backtomain.js"></script>
+  <script src="js/settingconfirm.js"></script>
+</head>
+<body>
+    <header>
+      <section id="header_inner">
+        <a href="#"><img src="images/goback.png" alt="go back"></a>
+        <h1>설정</h1>
+        <a><img src="images/settingbutton.png" alt="Setting"></a>
+      </section>
+    </header>
+    <main>
+      <section class="wrap">
+        <form>
+          <legend class="blind">소리 / 알람</legend>
+          <section class="sound">
+            <h3>소리</h3>
+            <input type="radio" name="sound" id="sound"><label for="sound">켬</label>
+            <input type="radio" name="sound" id="sound"><label for="sound">끔</label>
+          </section>
+          <section class="alert">
+            <h3>알람</h3>
+            <input type="radio" name="alarm" id="alert"><label for="alert">켬</label>
+            <input type="radio" name="alarm" id="alert"><label for="alert">끔</label>
+          </section>
+        </form>
+        <section class="Contact">
+          <h3>Contact Us</h3>
+          <table>
+            <tr>
+            <th>버그 신고</th>
+            <td><a href="#">example@domain.com</a></td>          
+            </tr>
+            <tr>
+            <th>address</th>
+            <td>서울특별시 동대문구 전농1동 교보문고</td>          
+            </tr>
+            <tr>
+            <th>Tel.</th>
+            <td>02) 0000 - 0000</td>          
+            </tr>
+          </table>
+          <div id="map"></div>
+          <script>
+            let map;
+            function initMap() {
+              let addr = { lat: 37.58070726060799, lng: 127.0476585711746 };
+              map = new google.maps.Map(document.getElementById("map"), {
+                center: addr,
+                zoom: 15,
+              });
+    
+              let marker = new google.maps.Marker({
+                position: addr,
+                map: map,
+                title: "청량리 교보문고"
+              });
+              let infowindow = new google.maps.InfoWindow({
+                content: "청량리 교보문고"
+              });
+              infowindow.open(map, marker);
+            }
+          </script>
+          <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMi1BVLNsAHw0iVm666g6G7h973x7DwZE&callback=initMap&v=weekly"
+            async>
+            </script>
+        </section>
+        <button type="submit">확인</button>
+      </section>
+    </main>
+</body>
+</html>

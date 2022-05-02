@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon-precomposed" href=".png">
+  <link rel="apple-touch-startup-image" href=".png">
+  <title>Mobile minimalife Interior Info</title>
+  <link rel="stylesheet" href="css/self_2.css">
+  <script src="js/loginOut.js"></script>
+  <script src="js/category.js"></script>
+  <script src="js/filter.js"></script>
+  <script src="js/backtomain.js"></script>
+</head>
+<body>
+  <header>
+    <section id="header_inner">
+    <a href="#"><img src="images/goback.png" alt="go back"></a>
+    <h1>Self Interior 정보</h1>
+    <a href="setting.html"><img src="images/settingbutton.png" alt="Setting"></a>      
+    </section>
+    <form>
+      <label for="srch" class="blind">검색</label>
+      <button type="button" class="">filterOff</button>
+      <input type="search" id="srch">
+      <button type="submit"><img src="images/search.png" alt="search Button"></button>
+    </form>
+  </header>
+  <section class="srch_filter">
+    <button type="button">filterOff</button>
+    <form>
+      <div class="area">
+        <h4>지역</h4>
+        <ul>
+          <li>
+            <label for="Seoul">서울<input type="radio" name="area" value="Seoul" id="radio1"></label>
+          </li>
+          <li>
+            <label for="Incheon/Gyeongki">인천/경기<input type="radio" name="area" value="Incheon/Gyeongki" id="radio2"></label>
+          </li>
+          <li>
+            <label for="Daejeon">대전<input type="radio" name="area" value="Daejeon" id="radio3"></label>
+          </li>
+          <li>
+            <label for="Daegu">대구<input type="radio" name="area" value="Daegu" id="radio4"></label>
+          </li>
+          <li>
+            <label for="Busan">부산<input type="radio" name="area" value="Busan" id="radio5"></label>
+          </li>
+          <li>
+            <label for="Gangwon">강원<input type="radio" name="area" value="Gangwon" id="radio6"></label>
+          </li>
+          <li>
+            <label for="Gyeongsang">경상<input type="radio" name="area" value="Gyeongsang" id="radio7"></label>
+          </li>
+          <li>
+            <label for="Jeolla">전라<input type="radio" name="area" value="Jeolla" id="radio8"></label>
+          </li>
+          <li>
+            <label for="Jeju">제주<input type="radio" name="area" value="Jeju" id="radio9"></label>
+          </li>
+          <li>
+            <label for="Abroad">해외<input type="radio" name="area" value="Abroad" id="radio10"></label>
+          </li>        
+        </ul>
+      </div>
+      <div class="house">
+        <h4>주거 형태</h4>
+        <ul>
+          <li>
+            <label for="apartment">아파트<input type="checkbox" name="house" value="Apartment" id="checkbox"></label>
+          </li>
+          <li>
+            <label for="office">오피스텔<input type="checkbox" name="house" value="Office" id="checkbox"></label>
+          </li>
+          <li>
+            <label for="detached">주택<input type="checkbox" name="house" value="Detached" id="checkbox"></label>
+          </li>
+          <li>
+            <label for="oneroom">원룸<input type="checkbox" name="house" value="Oneroom" id="checkbox"></label>
+          </li>
+          <li>
+            <label for="flathouse">빌라<input type="checkbox" name="house" value="Flathouse" id="checkbox"></label>
+          </li>
+        </ul>
+      </div>
+      <div class="room">
+        <h4>활용 공간</h4>
+        <ul>
+          <li>
+            <label for="Porch">현관<input type="checkbox" name="room" value="Porch" id="checkbox"></label>
+          </li>
+          <li>
+            <label for="Livingroom">거실<input type="checkbox" name="room" value="Livingroom" id="checkbox"></label>
+          </li>
+          <li>
+            <label for="Bedroom">침실<input type="checkbox" name="room" value="Bedroom" id="checkbox"></label>
+          </li>
+          <li>
+            <label for="Bathroom">화장실<input type="checkbox" name="room" value="Bathroom" id="checkbox"></label>
+          </li>
+          <li>
+            <label for="Kitchen">부엌<input type="checkbox" name="room" value="Kitchen" id="checkbox"></label>
+          </li>
+          <li>
+            <label for="library">서재<input type="checkbox" name="room" value="library" id="checkbox"></label>
+          </li>
+          <li>
+            <label for="balcony">발코니<input type="checkbox" name="room" value="balcony" id="checkbox"></label>
+          </li>
+        </ul>
+      </div>
+    </form>
+  </section>
+  <main>
+    <section class="content">
+      <select name="article_filter" id="filtering">
+        <option value="new">최신</option>
+        <option value="last">과거</option>
+        <option value="famous">인기</option>
+        <option value="username">작성자명</option>
+        <option value="title">글제목</option>
+      </select>
+      <a href="#" class="write">글 쓰기</a>
+      <article class="list">
+        <a href="#" class="left">
+          <div class="image"><img src="images/img2.jpg" alt="거실"></div>
+          <div class="text">
+            <h6>거실 인테리어 잘 꾸미는 법</h6>
+            <p>거실의 모양이나 크기는 상관없다. 중요한 건, 편안하고 쾌적한, 미관상으로 아름다운 공간을 만드는 것이다. 모든 장식용 아이템들은 그것만의 역할과 </p>
+          </div>
+        </a>
+        <a href="#" class="right">
+          <div class="image"><img src="images/img3.jpg" alt="중세풍"></div>
+          <div class="text">
+            <h6>미니멀에 중세풍 조화시키기</h6>
+            <p>웨인스콧팅과 화려한 가구, 조명으로 대표되는 프렌치모던 인테리어는 고풍스러움을 현대의 세련됨으로 풀어내어 많은 이들의 사랑을 받고 있는 스타일이다. 편안하</p>
+          </div>
+        </a>
+        <a href="#" class="left">
+          <div class="image"><img src="images/banner2.jpg" alt="화이트톤"></div>
+          <div class="text">
+            <h6>화이트톤 인테리어</h6>
+            <p>화이트 컬러를 콘셉트로 하는 인테리어는 항상 성공적이다. 화이트 컬러는 화사함, 모던함 등 누구나 좋아할만한 인테리어 분위기를 연출하고, 어떤 가구나 소품과도 잘</p>
+          </div>
+        </a>
+        <a href="#" class="right">
+          <div class="image"><img src="images/banner1.jpg" alt="복층"></div>
+          <div class="text">
+            <h6>복층 미니멀라이프</h6>
+            <p>복층 인테리어는 누구나 한번 즈음 꿈꿔 보았을 매우 매력적인 건축 스타일 중 하나이다. 한정된 공간에 하나의 층을 더 만들어 생활영역을 넓힐 수 있게 해주는 복층은 공간</p>
+          </div>
+        </a>
+        <a href="#" class="left">
+          <div class="image"><img src="images/images1.jpg" alt="사무실"></div>
+          <div class="text">
+            <h6>깔끔한 사무실인테리어</h6>
+            <p>이번 글에서 소개할 사무실 인테리어 비법은 좀 더 기분 좋게 근무 시간을 보내는 데 도움이 된다. 사무실 크기와 상관없이 일단 깔끔하게 정리가 잘 되어 있다면 조금만 인테리</p>
+          </div>
+        </a>
+        <a href="#" class="right">
+          <div class="image"><img src="images/images7.jpg" alt="작은집"></div>
+          <div class="text">
+            <h6>작은 집 똑똑하게 꾸미기</h6>
+            <p>집이 작을수록 우리의 고민은 커진다. 보기에도 아늑하고 편안해야하면서도, 실제로 이 집에 거주하는 우리에게는 필요한 물건들을 알차게</p>
+          </div>
+        </a>
+        <a href="#" class="left">
+          <div class="image"><img src="images/images11.jpeg" alt="작은침실"></div>
+          <div class="text">
+            <h6>작은 침실 인테리어 꿀팁</h6>
+            <p>집에서 가장 사적 공간에 해당되는 침실은, 공간의 아늑함과 쾌적함이 그 무엇보다 중요하게 다뤄져야 한다. 또한, 작은 침실은 조금만 꾸며도 금세 어수선해 보일 수 있으므로, 일반적인 침실 인테리어와는 다른 방법으로 접근</p>
+          </div>
+        </a>
+        <a href="#" class="right">
+          <div class="image"><img src="images/images9.jpg" alt="원룸"></div>
+          <div class="text">
+            <h6>나혼산 원룸 꾸미기</h6>
+            <p>혼자 사는 분들 중 가장 큰 가구는 아마 침대일겁니다. 특히 원룸같이 좁은 곳에서 생활하는 경우 침대의 위치를 결정하고 나서 다른 가구들을 배치하는 걸 추천드리고 싶네요. 위 사진처럼 창문을 따라 침대를 놓으면 아침 햇살이 들어와 아침마다 기분좋게 일어날 수 있겠죠? 또한</p>
+          </div>
+        </a>
+        <a href="#" class="left">
+          <div class="image"><img src="images/images8.jpg" alt="서재"></div>
+          <div class="text">
+            <h6>나만의 서재 인테리어</h6>
+            <p>우리는 어릴 적부터 한 번 쯤은 나만의 서재를 갖고 싶은 생각을 해봤을 것이다. 천장까지 닿을듯한 높은 책장이 있는 클래식한 서재 인테리어에 더하여, 최근들어 다양한 목적과 스타일로 서재를 꾸미는 이들이 늘어나고</p>
+          </div>
+        </a>
+        <a href="#" class="right">
+          <div class="image"><img src="images/images10.jpg" alt="발코니"></div>
+          <div class="text">
+            <h6>발코니 예쁘게 꾸미기</h6>
+            <p>우리는 흔히 아파트 거실에 딸린 서비스 공간을 베란다라고 부르지만 실제로는 발코니가 맞는 용어이다. 베란다는 건물 아래층과 위층의 면적 차이로 생긴 공간, 지붕 없이 노출된 공간을 이르며 아파트 최상층 다락방 앞 등이 이에 해당한다.</p>
+          </div>          
+        </a>
+        <a href="#" class="left">
+          <div class="image"><img src="images/white-kitchen.jpg" alt="주방"></div>
+          <div class="text">
+            <h6>주방에 미니멀을 적용하면</h6>
+            <p>직선적인 디자인과 기능적인 레이아웃 및 단순하면서도 우아한 스타일을 선호한다면 당신은 미니멀리스트의 매력에 빠져들 것이다. 미니멀리즘은 장식과 잡다한 요소들을 최대한 배제하는 방식으로 여백의 가치를 찾아내는 디자인계의 트렌드다. 안락하고 따뜻한 분위기를 연출하거나</p>
+          </div>
+        </a>
+        <a href="#" class="right">
+          <div class="image"><img src="images/bathroom-vanity-light.jpg" alt="화장실"></div>
+          <div class="text">
+            <h6>화장실을 깔끔하게</h6>
+            <p>욕실 인테리어를 할 때 가장 많은 고민을 하게 되는 부분이 욕조를 설치할지 말지죠. 설계 상에서는 욕조가 없었거든요. 사용빈도가 높을 지 의문도 있었고 화장실이 좁아지는 건 아닐까에 대한 걱정도
+              있었어요.</p>
+          </div>          
+        </a>
+      </article>
+    </section>
+  </main>
+  <div id="backdrop" class=""></div>
+  <footer>
+    <nav class="">
+      <ol>
+        <li class=""><button type="button">Self Interior</button>
+          <div class="ul_wrap">
+          <ul>
+            <li><a href="self_1.html">Self Interior 피드</a></li>
+            <li><a href="self_2.html">Self Interior 정보</a></li>
+            <li><a href="self_3.html">가구 및 소품 정보</a></li>
+          </ul>
+          </div>
+        </li>
+        <li class=""><button type="button">중고 거래</button>
+          <div class="ul_wrap">
+          <ul>
+            <li><a href="sellbuy_1.html">팔아요</a></li>
+            <li><a href="sellbuy_2.html">원해요</a></li>
+            <li><a href="sellbuy_3.html">중고 거래 후기</a></li>
+          </ul>
+          </div>
+        </li>
+        <li class=""><button type="button">무료 나눔</button>
+          <div class="ul_wrap">
+          <ul>
+            <li><a href="spliting_1.html">비워요</a></li>
+            <li><a href="spliting_2.html">채워요</a></li>
+            <li><a href="spliting_3.html">무료 나눔 후기</a></li>
+          </ul>
+          </div>
+        </li>
+      </ol>
+    </nav>
+    <section class="navigate">
+      <button type="button" class="category">category</button>
+      <a href="#" class="home">home</a>
+      <a href="mypage.html" class="mypage">Mypage</a>
+    </section>
+  </footer>
+</body>
+</html>

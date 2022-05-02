@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon-precomposed" href=".png">
+  <link rel="apple-touch-startup-image" href=".png">
+  <title>Mobile Sign up form</title>
+  <link rel="stylesheet" href="css/signup.css">
+  <script src="js/signup.js"></script>
+</head>
+<body>
+  <header>
+    <section id="header_inner">
+        <a href="login.html" class="blind"><img src="images/goback.png" alt="go back"></a>
+        <h2>SIGN UP</h2>
+        <a href="setting.html"><img src="images/settingbutton.png" alt="Setting"></a>
+    </section>
+  </header>
+  <main>
+    <section id="prev">
+      <h3>필수 입력 사항</h3>
+      <form action="/" method="post" id="signup_form1">
+        <fieldset>
+          <legend class="blind">가입양식</legend>
+          <section class="name">
+            <label for="user_name">이름</label>
+            <input type="text" name="family name" id="user_name1" placeholder="성 (Family Name)" autocomplete="family-name">
+            <input type="text" name="last name" id="user_name2" placeholder="이름 (Last Name)" autocomplete="given-name">
+          </section>
+          <section class="ID">
+            <label for="user_id">ID</label>
+            <input type="text" name="user_id" id="user_id" placeholder="ID를 입력해주세요" required>
+            <button type="button" id="user_confirm_id">중복검사</button>
+          </section>
+          <section class="password">
+            <label for="user_password">Password</label>
+            <input type="password" name="user_password" id="user_password" placeholder="Password를 입력해주세요" autocomplete="new-password"
+             required>
+          </section>
+          <section class="confirm_password">
+            <label for="confirm_password">Password 확인</label>
+            <input type="password" name="confirm_password" id="confirm_password" placeholder="Password를 입력해주세요"  autocomplete="new-password" required>
+          </section>
+          <section class="address">
+            <label for="area_num">우편번호</label>
+            <input type="text" name="areanum" id="area_num" maxlength="5" placeholder="우편번호 입력">
+            <button type="button">우편번호</button>
+            <label for="address">주소 <span>(도로명)</span></label>
+            <input type="text" id="user_address" placeholder="(광역 시, 도/ 시, 군, 구 / 읍, 면, 동)" autocomplete="address-line1">
+            <input type="text" id="user_address2" placeholder="상세주소 (건물명 / 동, 호수)">
+          </section>
+          <section class="mail">
+            <label for="user_mail">E-mail</label>
+            <input type="text" name="mail" id="user_mail" placeholder="email ID@exple.com" autocomplete="">
+          </section>
+          <section class="phone">
+            <label for="tel">Phone</label>
+            <input type="tel" name="tel" id="user_phone" maxlength="11" placeholder="( - 생략 )">
+          </section>
+        </fieldset>
+      </form>
+      <section class="page">
+        <!-- next click page change -->
+        <a href="login.html" class="prev">◀ 이전</a>
+        <button type="button" class="next">다음 ▶</button>
+      </section>
+    </section>
+    <section id="next">
+      <h3>선택 입력 사항</h3>
+      <form action="/" method="post" id="signup_form2">
+        <fieldset>
+          <legend class="blind">선택 기입</legend>
+          <section class="profile">
+            <h5>프로필 이미지 <span>(jpg/png)</span></h5>
+            <label for="profile" class="upload_image"><img src="images/profile.png" alt="프로필이미지"></label>
+            <input type="file" name="upload" id="profile" class="blind">
+          </section>
+          <section class="nickname">
+            <label for="user_nickname">활동명</label>
+            <input type="text" name="nickname" id="user_nickname" placeholder="원하는 닉네임을 입력해주세요" autocomplete="nickname">
+            <button type="submit" id="confirm_user_nickname">중복검사</button>
+          </section>
+          <section class="interest">
+            <h5>관심사</h5>
+            <label for="check1"><input type="checkbox" name="check[]" id="check1" value="SelfInterior">셀프인테리어</label>
+            <label for="check2"><input type="checkbox" name="check[]" id="check2" value="Sellbuy">중고거래</label>
+            <label for="check3"><input type="checkbox" name="check[]" id="check3" value="Split">무료나눔</label>              
+          </section>
+        </fieldset>
+      </form>
+      <section class="confirm">
+        <!-- button reset go to page prev and reset data -->
+        <button type="reset">취<span></span>소</button>
+        <button type="submit">확<span></span>인</button>
+        <!-- button submit>main.html and submit data -->
+      </section>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon-precomposed" href=".png">
+  <link rel="apple-touch-startup-image" href=".png">
+  <title>Mobile minimalife login</title>
+  <link rel="stylesheet" href="css/login.css">
+  <script src="js/loginOut.js"></script>
+</head>
+<body>
+  <section id="wrap">
+    <header>
+      <section class="header_logo">
+      <h1><img src="images/logo.png" alt="Minimalife logo"><p><span>미</span>니멀라이프를<br><span>완성</span>하다</p></h1>
+      </section>
+    </header>
+    <main id="form">
+      <p>Find My <a href="#">ID</a> / <a href="#">Password</a></p>
+      <form action="main.html" method="post" id="form">
+        <legend class="blind">로그인 폼</legend>
+        <div class="loginform" title="login form">
+          <input type="text" name="user_id" id="user_id" placeholder="ID를 입력해주세요" value="" required>
+          <input type="password" name="user_password" id="user_password" placeholder="Password를 입력해주세요" autocomplete="" value="" required>
+          <input type="submit" value="SIGN  IN">
+        </div>
+      </form>
+    </main>
+    <footer>
+      <p>Don't have an account?&nbsp;&nbsp;&nbsp;&nbsp;<a href="signup_form.html">Sign UP</a></p>
+    </footer>
+  </section>
+  <div id="backdrop" class="is_active"></div>
+</body>
+</html>

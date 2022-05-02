@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon-precomposed" href=".png">
+  <link rel="apple-touch-startup-image" href=".png">
+  <title>Mobile minimalife Interior Feed</title>
+  <link rel="stylesheet" href="css/self_1.css">
+  <script src="js/loginOut.js"></script>
+  <script src="js/category.js"></script>
+  <script src="js/filter.js"></script>
+  <script src="js/backtomain.js"></script>
+</head>
+<body>
+  <header>
+    <section id="header_inner">
+    <a href="#"><img src="images/goback.png" alt="go back"></a>
+    <h1>Self Interior 피드</h1>
+    <a href="setting.html"><img src="images/settingbutton.png" alt="Setting"></a>      
+    </section>
+    <form>
+      <label for="srch" class="blind">검색</label>
+      <button type="button" class="">filterOff</button>
+      <input type="search" id="srch">
+      <button type="submit"><img src="images/search.png" alt="search Button"></button>
+    </form>
+  </header>
+  <section class="srch_filter">
+    <button type="button">filterOff</button>
+    <form>
+      <div class="area">
+        <h4>지역</h4>
+        <ul>
+          <li>
+            <label for="Seoul">서울<input type="radio" name="area" value="Seoul" id="radio1"></label>
+          </li>
+          <li>
+            <label for="Incheon/Gyeongki">인천/경기<input type="radio" name="area" value="Incheon/Gyeongki" id="radio2"></label>
+          </li>
+          <li>
+            <label for="Daejeon">대전<input type="radio" name="area" value="Daejeon" id="radio3"></label>
+          </li>
+          <li>
+            <label for="Daegu">대구<input type="radio" name="area" value="Daegu" id="radio4"></label>
+          </li>
+          <li>
+            <label for="Busan">부산<input type="radio" name="area" value="Busan" id="radio5"></label>
+          </li>
+          <li>
+            <label for="Gangwon">강원<input type="radio" name="area" value="Gangwon" id="radio6"></label>
+          </li>
+          <li>
+            <label for="Gyeongsang">경상<input type="radio" name="area" value="Gyeongsang" id="radio7"></label>
+          </li>
+          <li>
+            <label for="Jeolla">전라<input type="radio" name="area" value="Jeolla" id="radio8"></label>
+          </li>
+          <li>
+            <label for="Jeju">제주<input type="radio" name="area" value="Jeju" id="radio9"></label>
+          </li>
+          <li>
+            <label for="Abroad">해외<input type="radio" name="area" value="Abroad" id="radio10"></label>
+          </li>        
+        </ul>
+      </div>
+      <div class="house">
+        <h4>주거 형태</h4>
+        <ul>
+          <li>
+            <label for="apartment">아파트<input type="checkbox" name="house" value="Apartment" id="checkbox"></label>
+          </li>
+          <li>
+            <label for="office">오피스텔<input type="checkbox" name="house" value="Office" id="checkbox"></label>
+          </li>
+          <li>
+            <label for="detached">주택<input type="checkbox" name="house" value="Detached" id="checkbox"></label>
+          </li>
+          <li>
+            <label for="oneroom">원룸<input type="checkbox" name="house" value="Oneroom" id="checkbox"></label>
+          </li>
+          <li>
+            <label for="flathouse">빌라<input type="checkbox" name="house" value="Flathouse" id="checkbox"></label>
+          </li>
+        </ul>
+      </div>
+      <div class="room">
+        <h4>활용 공간</h4>
+        <ul>
+          <li>
+            <label for="Porch">현관<input type="checkbox" name="room" value="Porch" id="checkbox"></label>
+          </li>
+          <li>
+            <label for="Livingroom">거실<input type="checkbox" name="room" value="Livingroom" id="checkbox"></label>
+          </li>
+          <li>
+            <label for="Bedroom">침실<input type="checkbox" name="room" value="Bedroom" id="checkbox"></label>
+          </li>
+          <li>
+            <label for="Bathroom">화장실<input type="checkbox" name="room" value="Bathroom" id="checkbox"></label>
+          </li>
+          <li>
+            <label for="Kitchen">부엌<input type="checkbox" name="room" value="Kitchen" id="checkbox"></label>
+          </li>
+          <li>
+            <label for="library">서재<input type="checkbox" name="room" value="library" id="checkbox"></label>
+          </li>
+          <li>
+            <label for="balcony">발코니<input type="checkbox" name="room" value="balcony" id="checkbox"></label>
+          </li>
+        </ul>
+      </div>
+    </form>
+  </section>
+  <main>
+    <section class="content">
+      <a href="#" class="write">글 쓰기</a>
+      <section class="top10">
+        <a href="#" class="banner1">
+          <div class="image"><img src="images/banner1.jpg" alt="배너1"></div>
+          <h3>인기 TOP 10</h3>
+        </a>
+        <a href="#" class="banner2">
+          <div class="image"><img src="images/banner2.jpg" alt="배너2"></div>
+          <h3>실시간 TOP 10</h3>
+        </a>
+      </section>
+      <section class="content1">
+        <h3>실시간 피드</h3>
+        <article class="item1">
+          <a href="#" class="pic1">
+            <div class="image"><img src="images/img5.jpg" alt="책상"></div>
+            <div class="like"><img src="images/like.png" alt="좋아요"><span>32</span></div>
+          </a>
+          <a href="#" class="pic2">
+            <div class="image"><img src="images/images7.jpg" alt="공간"></div>
+            <div class="like"><img src="images/like.png" alt="좋아요"><span>60</span></div>  
+          </a>
+          <a href="#" class="pic3">
+            <div class="image"><img src="images/img10.jpg" alt="서랍장"></div>
+            <div class="like"><img src="images/like.png" alt="좋아요"><span>23</span></div>  
+          </a>
+          <a href="#" class="pic4">
+            <div class="image"><img src="images/img11.jpg" alt="시계"></div>
+            <div class="like"><img src="images/like.png" alt="좋아요"><span>23</span></div>  
+          </a>
+          <a href="#" class="pic5">
+            <div class="image"><img src="images/images8.jpg" alt="서재"></div>
+            <div class="like"><img src="images/like.png" alt="좋아요"><span>10</span></div>   
+          </a>
+          <a href="#" class="pic6">
+            <div class="image"><img src="images/images3.jpg" alt="소파"></div>
+            <div class="like"><img src="images/like.png" alt="좋아요"><span>20</span></div>   
+          </a>
+          <a href="#" class="pic7">
+            <div class="image"><img src="images/img6.jpg" alt="거실"></div>
+            <div class="like"><img src="images/like.png" alt="좋아요"><span>50</span></div>   
+          </a>
+          <a href="#" class="pic8">
+            <div class="image"><img src="images/images10.jpg" alt="발코니"></div>
+            <div class="like"><img src="images/like.png" alt="좋아요"><span>8</span></div>   
+          </a>
+          <a href="#" class="pic9">
+            <div class="image"><img src="images/img12.jpg" alt="꽃병"></div>
+            <div class="like"><img src="images/like.png" alt="좋아요"><span>40</span></div>   
+          </a>
+          <a href="#" class="pic10">
+            <div class="image"><img src="images/images9.jpg" alt="원룸"></div>
+            <div class="like"><img src="images/like.png" alt="좋아요"><span>85</span></div>   
+          </a>
+        </article>
+      </section>
+      <section class="content2">
+        <h3>오늘의 피드</h3>
+        <article class="item2">
+          <a href="#" class="pic1">
+            <div class="image"><img src="images/images6.jpg" alt="거실"></div>
+            <div class="like"><img src="images/like.png" alt="좋아요"><span>1K</span></div>  
+          </a>
+          <a href="#" class="pic2">
+            <div class="image"><img src="images/img4.jpg" alt="책상선반"></div>
+            <div class="like"><img src="images/like.png" alt="좋아요"><span>4K</span></div>  
+          </a>
+          <a href="#" class="pic3">
+            <div class="image"><img src="images/images2.jpg" alt="옷걸이"></div>
+            <div class="like"><img src="images/like.png" alt="좋아요"><span>20</span></div>   
+          </a>
+          <a href="#" class="pic4">
+            <div class="image"><img src="images/images7.jpg" alt="공간"></div>
+            <div class="like"><img src="images/like.png" alt="좋아요"><span>50</span></div>   
+          </a>
+          <a href="#" class="pic5">
+            <div class="image"><img src="images/images8.jpg" alt="서재"></div>
+            <div class="like"><img src="images/like.png" alt="좋아요"><span>10</span></div>   
+          </a>
+          <a href="#" class="pic6">
+            <div class="image"><img src="images/images3.jpg" alt="소파"></div>
+            <div class="like"><img src="images/like.png" alt="좋아요"><span>20</span></div>   
+          </a>
+          <a href="#" class="pic7">
+            <div class="image"><img src="images/images10.jpg" alt="발코니"></div>
+            <div class="like"><img src="images/like.png" alt="좋아요"><span>8</span></div>
+          </a>
+          <a href="#" class="pic8">
+            <div class="image"><img src="images/img12.jpg" alt="꽃병"></div>
+            <div class="like"><img src="images/like.png" alt="좋아요"><span>40</span></div>
+          </a>
+          <a href="#" class="pic9">
+            <div class="image"><img src="images/images9.jpg" alt="원룸"></div>
+            <div class="like"><img src="images/like.png" alt="좋아요"><span>85</span></div>   
+          </a>
+          <a href="#" class="pic10">
+            <div class="image"><img src="images/bathroom-vanity-light.jpg" alt="화장실"></div>
+            <div class="like"><img src="images/like.png" alt="좋아요"><span>23</span></div>   
+          </a>
+        </article>
+      </section>
+      <section class="content3">
+        <h3>주제별 피드</h3>
+        <article class="item2">
+          <a href="#" class="pic1">
+            <div class="image"><img src="images/img6.jpg" alt="화이트톤"></div>
+            <div class="like"><img src="images/like.png" alt="좋아요"><span>55</span></div>  
+          </a>
+          <a href="#" class="pic2">
+            <div class="image"><img src="images/img8.jpg" alt="책장"></div>
+            <div class="like"><img src="images/like.png" alt="좋아요"><span>33</span></div>    
+          </a>
+          <a href="#" class="pic3">
+            <div class="image"><img src="images/images5.jpg" alt="소품"></div>
+            <div class="like"><img src="images/like.png" alt="좋아요"><span>30</span></div>    
+          </a>
+          <a href="#" class="pic4">
+            <div class="image"><img src="images/images1.jpg" alt="사무실"></div>
+            <div class="like"><img src="images/like.png" alt="좋아요"><span>40</span></div>    
+          </a>
+          <a href="#" class="pic4">
+            <div class="image"><img src="images/images11.jpeg" alt="작은방"></div>
+            <div class="like"><img src="images/like.png" alt="좋아요"><span>89</span></div>  
+          </a>
+          <a href="#" class="pic5">
+            <div class="image"><img src="images/bathroom-vanity-light.jpg" alt="화장실"></div>
+            <div class="like"><img src="images/like.png" alt="좋아요"><span>23</span></div>    
+          </a>
+          <a href="#" class="pic5">
+            <div class="image"><img src="images/images6.jpg" alt="거실"></div>
+            <div class="like"><img src="images/like.png" alt="좋아요"><span>1K</span></div>    
+          </a>
+          <a href="#" class="pic6">
+            <div class="image"><img src="images/images8.jpg" alt="서재"></div>
+            <div class="like"><img src="images/like.png" alt="좋아요"><span>0.5K</span></div>    
+          </a>
+          <a href="#" class="pic7">
+            <div class="image"><img src="images/images9.jpg" alt="원룸"></div>
+            <div class="like"><img src="images/like.png" alt="좋아요"><span>4K</span></div>  
+          </a>
+          <a href="#" class="pic8">
+            <div class="image"><img src="images/images10.jpg" alt="발코니"></div>
+            <div class="like"><img src="images/like.png" alt="좋아요"><span>18</span></div>    
+          </a>
+          <a href="#" class="pic9">
+            <div class="image"><img src="images/white-kitchen.jpg" alt="부엌"></div>
+            <div class="like"><img src="images/like.png" alt="좋아요"><span>0.1K</span></div>    
+          </a>
+          <a href="#" class="pic10">
+            <div class="image"><img src="images/banner1.jpg" alt="복층"></div>
+            <div class="like"><img src="images/like.png" alt="좋아요"><span>5K</span></div>    
+          </a>
+        </article>
+      </section>
+    </section>
+  </main>
+  <div id="backdrop" class=""></div>
+  <footer>
+    <nav class="">
+      <ol>
+        <li class=""><button type="button">Self Interior</button>
+          <div class="ul_wrap">
+          <ul>
+            <li><a href="self_1.html">Self Interior 피드</a></li>
+            <li><a href="self_2.html">Self Interior 정보</a></li>
+            <li><a href="self_3.html">가구 및 소품 정보</a></li>
+          </ul>
+          </div>
+        </li>
+        <li class=""><button type="button">중고 거래</button>
+          <div class="ul_wrap">
+          <ul>
+            <li><a href="sellbuy_1.html">팔아요</a></li>
+            <li><a href="sellbuy_2.html">원해요</a></li>
+            <li><a href="sellbuy_3.html">중고 거래 후기</a></li>
+          </ul>
+          </div>
+        </li>
+        <li class=""><button type="button">무료 나눔</button>
+          <div class="ul_wrap">
+          <ul>
+            <li><a href="spliting_1.html">비워요</a></li>
+            <li><a href="spliting_2.html">채워요</a></li>
+            <li><a href="spliting_3.html">무료 나눔 후기</a></li>
+          </ul>
+          </div>
+        </li>
+      </ol>
+    </nav>
+    <section class="navigate">
+      <button type="button" class="category">category</button>
+      <a href="main.html" class="home">home</a>
+      <a href="mypage.html" class="mypage">Mypage</a>
+    </section>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon-precomposed" href=".png">
+  <link rel="apple-touch-startup-image" href=".png">
+  <title>Mobile minimalife Spliting_2</title>
+  <link rel="stylesheet" href="css/Sellbuy_spliting_2.css">
+  <script src="js/loginOut.js"></script>
+  <script src="js/category.js"></script>
+  <script src="js/filter.js"></script>
+  <script src="js/backtomain.js"></script>
+</head>
+<body>
+  <header>
+    <section id="header_inner">
+    <a href="#"><img src="images/goback.png" alt="go back"></a>
+    <h1>채워요</h1>
+    <a href="setting.html"><img src="images/settingbutton.png" alt="Setting"></a>      
+    </section>
+    <form>
+      <label for="srch" class="blind">검색</label>
+      <button type="button" class="">filterOff</button>
+      <input type="search" id="srch">
+      <button type="submit"><img src="images/search.png" alt="search Button"></button>
+    </form>
+  </header>
+  <section class="srch_filter">
+    <button type="button">filterOff</button>
+    <form>
+      <div class="area">
+        <h4>지역</h4>
+        <ul>
+          <li>
+            <label for="Seoul">서울<input type="radio" name="area" value="Seoul" id="radio1"></label>
+          </li>
+          <li>
+            <label for="Incheon/Gyeongki">인천/경기<input type="radio" name="area" value="Incheon/Gyeongki" id="radio2"></label>
+          </li>
+          <li>
+            <label for="Daejeon">대전<input type="radio" name="area" value="Daejeon" id="radio3"></label>
+          </li>
+          <li>
+            <label for="Daegu">대구<input type="radio" name="area" value="Daegu" id="radio4"></label>
+          </li>
+          <li>
+            <label for="Busan">부산<input type="radio" name="area" value="Busan" id="radio5"></label>
+          </li>
+          <li>
+            <label for="Gangwon">강원<input type="radio" name="area" value="Gangwon" id="radio6"></label>
+          </li>
+          <li>
+            <label for="Gyeongsang">경상<input type="radio" name="area" value="Gyeongsang" id="radio7"></label>
+          </li>
+          <li>
+            <label for="Jeolla">전라<input type="radio" name="area" value="Jeolla" id="radio8"></label>
+          </li>
+          <li>
+            <label for="Jeju">제주<input type="radio" name="area" value="Jeju" id="radio9"></label>
+          </li>
+          <li>
+            <label for="Abroad">해외<input type="radio" name="area" value="Abroad" id="radio10"></label>
+          </li>        
+        </ul>
+      </div>
+      <div class="house">
+        <h4>주거 형태</h4>
+        <ul>
+          <li>
+            <label for="apartment">아파트<input type="checkbox" name="house" value="Apartment" id="checkbox"></label>
+          </li>
+          <li>
+            <label for="office">오피스텔<input type="checkbox" name="house" value="Office" id="checkbox"></label>
+          </li>
+          <li>
+            <label for="detached">주택<input type="checkbox" name="house" value="Detached" id="checkbox"></label>
+          </li>
+          <li>
+            <label for="oneroom">원룸<input type="checkbox" name="house" value="Oneroom" id="checkbox"></label>
+          </li>
+          <li>
+            <label for="flathouse">빌라<input type="checkbox" name="house" value="Flathouse" id="checkbox"></label>
+          </li>
+        </ul>
+      </div>
+      <div class="room">
+        <h4>활용 공간</h4>
+        <ul>
+          <li>
+            <label for="Porch">현관<input type="checkbox" name="room" value="Porch" id="checkbox"></label>
+          </li>
+          <li>
+            <label for="Livingroom">거실<input type="checkbox" name="room" value="Livingroom" id="checkbox"></label>
+          </li>
+          <li>
+            <label for="Bedroom">침실<input type="checkbox" name="room" value="Bedroom" id="checkbox"></label>
+          </li>
+          <li>
+            <label for="Bathroom">화장실<input type="checkbox" name="room" value="Bathroom" id="checkbox"></label>
+          </li>
+          <li>
+            <label for="Kitchen">부엌<input type="checkbox" name="room" value="Kitchen" id="checkbox"></label>
+          </li>
+          <li>
+            <label for="library">서재<input type="checkbox" name="room" value="library" id="checkbox"></label>
+          </li>
+          <li>
+            <label for="balcony">발코니<input type="checkbox" name="room" value="balcony" id="checkbox"></label>
+          </li>
+        </ul>
+      </div>
+    </form>
+  </section>
+  <main>
+    <section class="content">
+      <select name="article_filter" id="filtering">
+        <option value="new">최신</option>
+        <option value="last">과거</option>
+        <option value="famous">인기</option>
+        <option value="username">작성자명</option>
+        <option value="title">글제목</option>
+      </select>
+      <a href="#" class="write">글 쓰기</a>
+      <article class="list">
+        <strong>목록</strong>
+        <section class="">
+          <a href="#" class="pic1">
+            <div class="image"><img src="images/images4.jpg" alt="협탁"></div>
+            <div class="title"><span class="type"></span><h6>협탁 구해요</h6></div>
+          </a>
+          <a href="#" class="pic2">
+            <div class="image"><img src="images/img10.jpg" alt="서랍장"></div>
+            <div class="title"><span class="type"></span><h6>서랍장 원해요</h6></div>  
+          </a>
+          <a href="#" class="pic3">
+            <div class="image"><img src="images/img12.jpg" alt="꽃병"></div>
+            <div class="title"><span class="type"></span><h6>꽃병 찾아요</h6></div>  
+          </a>
+          <a href="#" class="pic4">
+            <div class="image"><img src="images/images2.jpg" alt="옷걸이"></div>
+            <div class="title"><span class="type"></span><h6>옷걸이 구해요</h6></div>
+          </a>
+          <a href="#" class="pic5">
+            <div class="image"><img src="images/images5.jpg" alt="소품"></div>
+            <div class="title"><span class="type"></span><h6>책상소품 주실 분</h6></div>  
+          </a>
+          <a href="#" class="pic6">
+            <div class="image"><img src="images/img13.jpg" alt="comics"></div>
+            <div class="title"><span class="type"></span><h6>코믹스 원서 구함</h6></div>  
+          </a>
+          <a href="#" class="pic7">
+            <div class="image"><img src="images/img5.jpg" alt="탁상시계"></div>
+            <div class="title"><span class="type"></span><h6>탁상시계 구해요</h6></div>
+          </a>
+          <a href="#" class="pic8">
+            <div class="image"><img src="images/img7.jpg" alt="빨래바구니"></div>
+            <div class="title"><span class="type"></span><h6>빨래바구니 구함</h6></div>  
+          </a>
+          <a href="#" class="pic9">
+            <div class="image"><img src="images/images2.jpg" alt="옷걸이"></div>
+            <div class="title"><span class="type"></span><h6>행거 찾아요</h6></div>  
+          </a>
+          <a href="#" class="pic10">
+            <div class="image"><img src="images/images3.jpg" alt="소파쿠션"></div>
+            <div class="title"><span class="type"></span><h6>소파쿠션 구해요</h6></div>
+          </a>
+          <a href="#" class="pic11">
+            <div class="image"><img src="images/img5.jpg" alt="스탠드"></div>
+            <div class="title"><span class="type"></span><h6>스탠드 구합니다</h6></div>  
+          </a>
+          <a href="#" class="pic12">
+            <div class="image"><img src="images/img12.jpg" alt="꽃병"></div>
+            <div class="title"><span class="type"></span><h6>꽃병 구해요</h6></div>  
+          </a>
+        </section>
+      </article>      
+    </section>
+  </main>
+  <div id="backdrop" class=""></div>
+  <footer>
+    <nav class="">
+      <ol>
+        <li class=""><button type="button">Self Interior</button>
+          <div class="ul_wrap">
+          <ul>
+            <li><a href="self_1.html">Self Interior 피드</a></li>
+            <li><a href="self_2.html">Self Interior 정보</a></li>
+            <li><a href="self_3.html">가구 및 소품 정보</a></li>
+          </ul>
+          </div>
+        </li>
+        <li class=""><button type="button">중고 거래</button>
+          <div class="ul_wrap">
+          <ul>
+            <li><a href="sellbuy_1.html">팔아요</a></li>
+            <li><a href="sellbuy_2.html">원해요</a></li>
+            <li><a href="sellbuy_3.html">중고 거래 후기</a></li>
+          </ul>
+          </div>
+        </li>
+        <li class=""><button type="button">무료 나눔</button>
+          <div class="ul_wrap">
+          <ul>
+            <li><a href="spliting_1.html">비워요</a></li>
+            <li><a href="spliting_2.html">채워요</a></li>
+            <li><a href="spliting_3.html">무료 나눔 후기</a></li>
+          </ul>
+          </div>
+        </li>
+      </ol>
+    </nav>
+    <section class="navigate">
+      <button type="button" class="category">category</button>
+      <a href="#" class="home">home</a>
+      <a href="mypage.html" class="mypage">Mypage</a>
+    </section>
+  </footer>
+</body>
+</html>

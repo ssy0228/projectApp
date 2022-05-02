@@ -1,0 +1,73 @@
+@import url(reset.css);
+@import url(../fontawesome-free-6.1.1-web/css/fontawesome.css);
+@import url(../fontawesome-free-6.1.1-web/css/fontawesome.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body { width: 100vw; height: 100vh; overflow: hidden; position: fixed; font-family: 'Noto Sans KR', sans-serif; }
+a { text-decoration: none; color: #707070; }
+
+
+
+/* layout */
+header { width: 100vw; height: 87px; background-color: #1ed761; padding-top: 33px; }
+#header_inner { display: flex; flex-wrap: nowrap; justify-content: space-between; padding: 0 17px 0; }
+#header_inner h1 { color: #fff; line-height: 35px; font-size: 17px; letter-spacing: -1.2px; align-self: flex-end; text-indent: 20px; font-weight: bold; }
+#header_inner>a:first-child { align-self: flex-end; }
+#header_inner>a:last-child { display: flex; width: 45px; height: 45px; align-self: flex-end; }
+header>form { width: 100%; height: 6.5vh; margin-top: 1vh; padding: 17px 4.5vw 0; display: flex; 
+              justify-content: space-between; align-content: flex-end; }
+main { width: 100%; height: calc(100vh - 87px); padding: 2vh 4.5vw; position: relative; }
+section.txtarea { width: 100vw; height: 87px; background-color: #D6D9DE; position: absolute; left: 0; right: 0; bottom: 0;
+                  display: flex; }
+
+
+
+/* main */
+section.chat { width: 100%; min-height: 60%; max-height: 100%; }
+.chat>div.answer { width: 100%; display: flex; column-gap: 3vw; margin-bottom: 32px; animation: load 1s ease-in 0s; }
+.answer>.bot { background: #fff url(../images/call.png) no-repeat 50% 50%; border-radius: 100%; width: 16.5vw; height: 16.5vw; border: 1px solid #f6f6f6; background-size: 70%; }
+.answer>div.bubble1 { border: 1px solid #e6fdc0; background-color: #e6fdc0; width: 46.7vw; border-radius: 17px; padding: 1vh 2vw; position: relative; }
+.answer>div.bubble1::before { content: ""; display: block; width: 0; height: 0; border-top: 2vh solid transparent; border-left: 4vw solid transparent;
+  border-bottom: 2vh solid #e6fdc0; position: absolute; left: -3vw; bottom: 1vh; }
+.answer>div.bubble1>p{ font-size: 15px; } 
+
+
+div.question { width: 100%; display: flex; justify-content: flex-end; animation: load2 2s ease-in 0s; }
+.question>div.bubble2 { border: 1px solid #d2f6e8; background-color: #d2f6e8; width: 46.7vw; border-radius: 17px; padding: 1vh 2vw; position: relative; margin-right: 2vw; }
+.question>div.bubble2::before { content: ""; display: block; width: 0; height: 0; border-top: 2vh solid transparent; border-right: 4vw solid transparent;
+                                border-bottom: 2vh solid #d2f6e8; position: absolute; right: -3vw; bottom: 1vh; }
+.question>div.bubble2>p{ font-size: 15px; } 
+
+@keyframes load {
+  from{
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes load2 {
+  from{
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+
+/* footer */
+form { width: 100%; display: flex; align-self: center; justify-content: center; column-gap: 4vw;}
+form>div.text { border-radius: 20px; border: 1px solid #fff; width: 75vw; padding: 1vh 2vw; overflow-y: unset; background: #fff; }
+div.text>input[type="text"] { appearance: none; outline: none; border: none; width: 100%; line-height: 1.5; }
+form>label { display: flex; align-self: center; width: 7.2vw; height: 7.2vw; background: #fff url(../images/label_file.png) no-repeat 50% 50%; 
+            background-size: 80%; border-radius: 7px; color: #262626; }
+
