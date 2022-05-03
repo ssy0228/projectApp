@@ -1,8 +1,7 @@
 @import url(reset.css);
-
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
-body { width: 100vw; height: 100vh; overflow: hidden; position: fixed; font-family: 'Noto Sans KR', sans-serif; }
+body { width: 100vw; height: calc(100vh - 64px); overflow: hidden; position: fixed; font-family: 'Noto Sans KR', sans-serif; }
 
 
 /* layout */
