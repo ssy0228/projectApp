@@ -1,0 +1,12 @@
+@import url(reset.css);
+@import url(layout.css);
+@import url(header.css);
+@import url(footer.css);
+@import url(filter.css);
+
+
+@import url(../fontawesome-free-6.1.1-web/css/fontawesome.css);
+@import url(../fontawesome-free-6.1.1-web/css/fontawesome.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+

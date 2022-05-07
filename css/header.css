@@ -1,0 +1,12 @@
+
+
+/* header form */
+header>form>button { cursor: pointer; }
+header>form>button[type="button"] { width: 18px; height: 15px; padding: 0; text-indent: -9999px; overflow: hidden;
+                                    background: url(../images/filter_off.png) no-repeat 0 0; }
+header>form>button[type="button"].is_on { width: 18px; height: 15px; padding: 0; text-indent: -9999px; overflow: hidden;
+                                          background: url(../images/filter_on.png) no-repeat 0 0; }                               
+header>form>button[type="submit"] { width: 20px; height: 20px; padding: 0; }
+header>form>button[type="submit"]>img { width: 100%; height: 100%; }
+header>form>input[type="search"] { width: 80%; height: 25px; margin: 0 auto; border: none; outline: none; 
+                                   appearance: none; border-bottom: 1px solid #828282; }

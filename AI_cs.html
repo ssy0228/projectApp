@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <link rel="apple-touch-icon-precomposed" href=".png">
+  <link rel="apple-touch-icon" href=".png">
   <link rel="apple-touch-startup-image" href=".png">
   <title>Mobile AI CS center</title>
+  <link rel="stylesheet" href="css/importcss.css">
   <link rel="stylesheet" href="css/AI_CS.css">
-  <script src="js/backtomain.js"></script>
 </head>
 <body>
   <header>
@@ -34,12 +34,15 @@
       <form>
         <!-- method post action -->
         <div class="text">
-          <input type="text" name="message" id="user_message">
+          <label for="user_message" class="blind">message</label>
+          <input type="text" name="message" id="user_message" placeholder="">
         </div>
-        <label for="srch_file"></label>
+        <label for="srch_file">search</label>
         <input type="file" name="user_file" id="srch_file" class="blind">
       </form>
     </section>
   </main>
 </body>
+<script src="js/backtomain.js"></script>
+<script src="js/documentsize.js"></script>
 </html>

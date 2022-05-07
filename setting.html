@@ -6,12 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <link rel="apple-touch-icon-precomposed" href=".png">
+  <link rel="apple-touch-icon" href=".png">
   <link rel="apple-touch-startup-image" href=".png">
   <title>Mobile Setting</title>
   <link rel="stylesheet" href="css/setting.css">
-  <script src="js/backtomain.js"></script>
-  <script src="js/settingconfirm.js"></script>
 </head>
 <body>
     <header>
@@ -27,13 +25,13 @@
           <legend class="blind">소리 / 알람</legend>
           <section class="sound">
             <h3>소리</h3>
-            <input type="radio" name="sound" id="sound"><label for="sound">켬</label>
-            <input type="radio" name="sound" id="sound"><label for="sound">끔</label>
+            <input type="radio" name="sound" id="on"><label for="on">켬</label>
+            <input type="radio" name="sound" id="off"><label for="off">끔</label>
           </section>
           <section class="alert">
             <h3>알람</h3>
-            <input type="radio" name="alarm" id="alert"><label for="alert">켬</label>
-            <input type="radio" name="alarm" id="alert"><label for="alert">끔</label>
+            <input type="radio" name="alarm" id="On"><label for="On">켬</label>
+            <input type="radio" name="alarm" id="Off"><label for="Off">끔</label>
           </section>
         </form>
         <section class="Contact">
@@ -82,4 +80,6 @@
       </section>
     </main>
 </body>
+<script src="js/backtomain.js"></script>
+<script src="js/settingconfirm.js"></script>
 </html>
