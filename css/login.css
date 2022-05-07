@@ -1,24 +1,22 @@
 @import url(reset.css);
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
-body { width: 100vw; height: calc(100vh - 64px); background: url(../images/back.png) no-repeat 50% 50%; 
-      background-size: cover; background-attachment: fixed; overflow: hidden; position: fixed; font-family: 'Noto Sans KR', sans-serif; }
 
+body { width: 375px; height: 812px; margin: 0 auto; overflow: hidden; font-family: 'Noto Sans KR', sans-serif; }
 a { text-decoration: none; }
 p { color: #fff; }
 
 
 /* layout */
-#wrap { display: flex; flex-direction: column; position: relative; z-index: 1; padding: 19.6vh 30px 30px; width: 100%; height: 100%; 
-  gap: 40px; }
-h1 { position: relative; width: 264px; height: 264px; margin: 0 auto; letter-spacing: -1.2px; font-size: 24px; line-height: 40px; }
+#wrap { display: flex; flex-direction: column; position: relative; padding: 128px 30px 30px; width: 100%; height: 100%;
+        gap: 40px; box-sizing: border-box; background: url(../images/back.png) no-repeat 50% 0%; background-size: 375px 812px; background-attachment: fixed; }
+h1 { position: relative; width: 264px; height: 264px; margin: 0 auto; letter-spacing: -1.2px; font-size: 24px; line-height: 40px; z-index: 2; }
 h1 img{ width: 236px; height: 198px; }
 h1 p { position: absolute; right: 0; bottom: 0; }
 h1 p>span { color: #10502c; font-weight: bolder; letter-spacing: -1.6px; font-size: 32px; }
 
-main#form { display: flex; flex-direction: column; width: 292px; margin: 0 auto; }
-#form>p { text-align: right; font-weight: normal; font-size: 14px; margin-bottom: 1vh; }
-#form>p>a { text-decoration: underline; color: #10502c; font-weight: 500; font-size: 16px; } 
+main#_form { display: flex; flex-direction: column; width: 292px; margin: 0 auto; z-index: 2; }
+#_form>p { text-align: right; font-weight: normal; font-size: 14px; margin-bottom: 1vh; }
+#_form>p>a { text-decoration: underline; color: #10502c; font-weight: 500; font-size: 16px; } 
 form>div.loginform { display: flex; flex-direction: column; gap: 10px; }
 .loginform>input { border-radius: 7px; }
 .loginform>input[type="text"]::placeholder,
@@ -27,13 +25,13 @@ form>div.loginform { display: flex; flex-direction: column; gap: 10px; }
 .loginform>input[type="password"]:focus::placeholder { opacity: 0; }
 .loginform>input[type="text"],
 .loginform>input[type="password"] { height: 38px; border: none; outline: none; }
-.loginform>input[type="text"] { padding: 9.5px 173px 9.5px 18px; }
-.loginform>input[type="password"] { padding: 9.5px 128px 9.5px 18px; margin-bottom: 15px; }
+.loginform>input[type="text"] { padding: 9.5px 18px 9.5px 18px; }
+.loginform>input[type="password"] { padding: 9.5px 18px 9.5px 18px; margin-bottom: 15px; }
 .loginform>input[type="submit"] { height: 41px; padding: 8.5px 115px 8.5px; background-color: #1ed761; color: #fff; text-align: center; 
                             letter-spacing: -0.8px; font-weight: 500; line-height: 1.5; font-size: 16px; cursor: pointer; margin-bottom: 25%; }
 
-footer { margin: 0 auto; text-align: center; justify-self: flex-end; }
-footer a { text-decoration: underline; color: #10502c; font-size: 21px; letter-spacing: -1.05px;  text-shadow: 0px 0px 3px #0f7; }
-#backdrop.is_active { position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100vw; height: 100vh; -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px); background-color: rgba(47,213,102, 30%);
-                background-size: contain; }
+footer { margin: 0 auto; text-align: center; justify-self: flex-end; z-index: 2; }
+footer a { text-decoration: underline; color: #10502c; font-size: 21px; letter-spacing: -1.05px; text-shadow: 0px 0px 3px #0f7; }
+#backdrop.is_active { position: absolute; top: 0; bottom: 0; -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px); background-color: rgba(47,213,102, 30%);
+                      background-size: cover; width: 375px; height: 812px; z-index: 1; }
 

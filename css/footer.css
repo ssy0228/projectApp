@@ -1,0 +1,42 @@
+
+
+/* footer */
+
+footer>nav { width: 375px; transform: translateY(300px); transition: all 0.3s linear; border-top-left-radius: 18px; border-top-right-radius: 18px; transform-origin: bottom; z-index: -1;
+  position: absolute; bottom: 87px; left: 0; right: 0; opacity: 0; }
+footer>nav.gnb { background-color: #fff; z-index: 1; transform: translateY(0); opacity: 1; z-index: 3; }
+footer>nav>ol{ width: 100%; height: 100%; }
+footer>nav>ol>li { width: 100%; position: relative; overflow: hidden; transition: max-height 0.2s linear; }
+footer>nav>ol>li>button { width: 100%; height: 86px; border-bottom: 1px solid #1ed761; cursor: pointer; text-align: left; background-color: #d9f8e5;
+                 padding: 27.5px 28px; color: #262626; letter-spacing: -1.1px; font-size: 17px; font-weight: bold; }
+footer>nav>ol>li:first-child>button { border-top-left-radius: 18px; border-top-right-radius: 18px;}                            
+footer>nav>ol>li>div { text-align: center; width: 100%; max-height: 0; transition: max-height 0.2s linear; }
+footer>nav>ol>li>div>ul>li { max-height: 0; }
+
+footer>nav>ol>li.on_list:first-child { max-height: 242px; transition: max-height 0.2s linear; }
+footer>nav>ol>li.on_list:first-child>div.ul_wrap { position: relative; max-height: 156px; transition: max-height 0.2s linear; }
+footer>nav>ol>li.on_list:first-child>div.ul_wrap>ul { max-height: 156px; }
+footer>nav>ol>li.on_list:first-child>div.ul_wrap>ul>li { max-height: 52px; line-height: 52px; border-bottom: 1px solid #e2e2e2; border-left: none; border-right: none; }
+
+footer>nav>ol>li.on_list:nth-child(2) { max-height: 242px; transition: max-height 0.2s linear; }
+footer>nav>ol>li.on_list:nth-child(2)>div.ul_wrap { position: relative; max-height: 156px; transition: max-height 0.2s linear; }
+footer>nav>ol>li.on_list:nth-child(2)>div.ul_wrap>ul { max-height: 156px; }
+footer>nav>ol>li.on_list:nth-child(2)>div.ul_wrap>ul>li { max-height: 52px; line-height: 52px; border-bottom: 1px solid #e2e2e2; border-left: none; border-right: none; }
+
+footer>nav>ol>li.on_list:nth-child(3) { max-height: 242px; transition: max-height 0.2s linear; }
+footer>nav>ol>li.on_list:nth-child(3)>div.ul_wrap { position: relative; max-height: 156px; transition: max-height 0.2s linear; }
+footer>nav>ol>li.on_list:nth-child(3)>div.ul_wrap>ul { max-height: 156px; }
+footer>nav>ol>li.on_list:nth-child(3)>div.ul_wrap>ul>li { max-height: 52px; line-height: 52px; border-bottom: 1px solid #e2e2e2; border-left: none; border-right: none; }
+
+#backdrop { display: none; }
+#backdrop.is_active { display: block; width: 390px; height: calc(100vh - ( 174px + 6vh)); position: fixed; bottom: 87px; left: 0; right: 0; 
+           background-color: rgba(216,216,216,0.1); -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px); opacity: 1; z-index: 0; }
+
+footer>section.navigate { width: 100%; display: flex; flex-wrap: nowrap; justify-content: space-between; padding: 23px 40px; background-color: #1ed761; position: absolute; z-index: 3; }
+.navigate>button[type="button"] { text-indent: -9999px; overflow: hidden; background: url(../images/category.png) no-repeat 0 0; width: 40px; 
+                       height: 40px; cursor: pointer; transform: scale(1); transition: transform 0.2s ease-in-out; }
+.navigate>button[type="button"].is_open { background: url(../images/opencate.png) no-repeat 0 0; transform: scale(1.2); transition: transform 0.2s ease-in-out; }
+.navigate>a.home { background: url(../images/home.png) no-repeat 0 0; text-indent: -9999px; overflow: hidden; width: 40px; transform: scale(1); transition: transform 0.2s ease-in-out; }
+.navigate>a.home.act { background: url(../images/home_act.png) no-repeat 0 0; text-indent: -9999px; overflow: hidden; width: 40px; transform: scale(1.5); transition: transform 0.2s ease-in-out; }
+.navigate>a.mypage { background: url(../images/Mypage.png) no-repeat 0 0; text-indent: -9999px; overflow: hidden; width: 40px; transform: scale(1); transition: transform 0.2s ease-in-out; }
+.navigate>a.mypage.on { background: url(../images/mypage_on.png) no-repeat 0 0; text-indent: -9999px; overflow: hidden; width: 40px; transform: scale(1.5); transition: transform 0.2s ease-in-out; }

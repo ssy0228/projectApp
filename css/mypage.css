@@ -1,77 +1,27 @@
-@import url(reset.css);
-@import url(../fontawesome-free-6.1.1-web/css/fontawesome.css);
-@import url(../fontawesome-free-6.1.1-web/css/fontawesome.min.css);
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100; 300; 400; 500; 700; 900&display=swap');
-body { width: 100vw; height: calc(100vh - 64px); overflow: hidden; position: fixed; font-family: 'Noto Sans KR', sans-serif; } 
 a { text-decoration: none; color: #707070; } 
 
-
-/* layout */
-header { width: 100vw; height: 87px; background-color: #1ed761; padding-top: 33px; } 
-#header_inner { display: flex; flex-wrap: nowrap; justify-content: space-between; padding: 0 17px 0; } 
-#header_inner h1 { color: #fff; line-height: 35px; font-size: 17px; letter-spacing: -1.2px; align-self: flex-end; text-indent: 20px; font-weight: bold; } 
-#header_inner h1>img { width: 42px; height: 36px; } 
-#header_inner>a:first-child { align-self: flex-end; } 
-#header_inner>a:last-child { display: flex; width: 45px; height: 45px; align-self: flex-end; } 
-
-main { width: 100%; height: calc(100vh - 171px); padding: 2vh 4.5vw; } 
-footer { width: 100vw; height: 87px; background-color: #1ed761; position: relative; } 
-
+main { margin: 0; height: 641px; }
 
 /* main */
 section.content { width: 100%; line-height: 1; display: flex; flex-direction: column; flex-wrap: nowrap; } 
 .content>a { display: block; padding: 4px 8px; border-radius: 7px; background-color: #1ed761; color: #fff; font-size: 17px; font-weight: 500; letter-spacing: -0.8px; line-height: 1.5; margin-left: auto; } 
-section.user_profile { width: 100%; display: flex; flex-direction: column; row-gap: 2.5vh; margin-bottom: 2.5vh; } 
-div.user { border: 1px solid #f6f6f6; border-radius: 100%; width: 40vw; height: 40vw; margin: 0 auto; background: url(../images/ACV_MR_Eivor_Female_Static_close_sm.jpg) no-repeat 50% 20%; background-size: 200%; } 
+section.user_profile { width: 100%; display: flex; flex-direction: column; row-gap: 25px; margin-bottom: 25px; } 
+div.user { border: 1px solid #f6f6f6; border-radius: 100%; width: 120px; height: 120px; margin: 0 auto; background: url(../images/ACV_MR_Eivor_Female_Static_close_sm.jpg) no-repeat 50% 20%; background-size: 200%; } 
 span.name { margin: 0 auto; font-weight: 500; font-size: 17px; letter-spacing: -0.9px; } 
-.user_profile>ul { display: flex; justify-content: center; column-gap: 3vw; } 
-.user_profile>ul>li { display:inline-flex; column-gap: 3vw; font-size: 14px; align-items: center; } 
+.user_profile>ul { display: flex; justify-content: center; column-gap: 24px; } 
+.user_profile>ul>li { display:inline-flex; column-gap: 24px; font-size: 14px; align-items: center; } 
 .user_profile>ul>li>img { height: 19px; } 
 
 section.page_list { width: 100%; } 
 .page_list>ul { width: 100%; display: flex; flex-wrap: wrap; } 
-.page_list>ul>li { width: 100%; display: flex; background: url(../images/list.png) no-repeat 90% 50%; border-bottom: 1px solid #ebebeb; } 
-.page_list>ul>li>a { font-size: 17px; font-weight: 500; color: #262626; padding: 2vh 7vw; } 
+.page_list>ul>li { width: 100%; display: flex; background: url(../images/list.png) no-repeat 95% 50%; background-size: 5%;
+  border-bottom: 1px solid #ebebeb; } 
+.page_list>ul>li>a { font-size: 17px; font-weight: 500; color: #262626; padding: 12px 20px; } 
 .page_list>ul>li:last-child { background: none; display: flex; flex-wrap: wrap; border-bottom: none; } 
-.page_list>ul>li:last-child>span { width: 100%; font-size: 17px; font-weight: 500; color: #262626; padding: 2vh 7vw; } 
-.page_list>ul>li:last-child>ul { display: flex; flex-wrap: wrap; padding: 0; row-gap: 1vh; justify-content: space-between; } 
-.page_list>ul>li:last-child>ul>li { display: inline-flex; width: 26.5vw; border-radius: 7px; background-color: #e6fdc0; padding: 1vh 0; justify-content: center; } 
+.page_list>ul>li:last-child>span { width: 100%; font-size: 17px; font-weight: 500; color: #262626; padding: 10px 20px; } 
+.page_list>ul>li:last-child>ul { display: flex; flex-wrap: wrap; padding: 0; row-gap: 10px; justify-content: space-between; } 
+.page_list>ul>li:last-child>ul>li { display: inline-flex; width: 100px; border-radius: 7px; background-color: #e6fdc0; padding: 1vh 0; justify-content: center; } 
 .page_list>ul>li:last-child>ul>li>a { font-size: 15px; color: #262626; letter-spacing: -0.9px; } 
 
 
 
-/* footer */
-footer>nav { width: 100vw; transform: translateY(300px); transition: all 0.3s linear; border-top-left-radius: 18px; border-top-right-radius: 18px; transform-origin: bottom; z-index: -1; position: absolute; bottom: 87px; left: 0; right: 0; } 
-footer>nav.gnb { background-color: #fff; z-index: 1; transform: translateY(0); } 
-footer>nav>ol { width: 100%; height: 100%; } 
-footer>nav>ol>li { width: 100%; position: relative; overflow: hidden; transition: max-height 0.2s linear; } 
-footer>nav>ol>li>button { width: 100%; height: 86px; border-bottom: 1px solid #1ed761; cursor: pointer; text-align: left; background-color: #d9f8e5; padding: 27.5px 28px; color: #262626; letter-spacing: -1.1px; font-size: 17px; font-weight: bold; } 
-footer>nav>ol>li:first-child>button { border-top-left-radius: 18px; border-top-right-radius: 18px; } 
-footer>nav>ol>li>div { text-align: center; width: 100%; max-height: 0; transition: max-height 0.2s linear; } 
-footer>nav>ol>li>div>ul>li { max-height: 0; } 
-
-footer>nav>ol>li.on_list:first-child { max-height: 242px; transition: max-height 0.2s linear; } 
-footer>nav>ol>li.on_list:first-child>div.ul_wrap { position: relative; max-height: 156px; transition: max-height 0.2s linear; } 
-footer>nav>ol>li.on_list:first-child>div.ul_wrap>ul { max-height: 156px; } 
-footer>nav>ol>li.on_list:first-child>div.ul_wrap>ul>li { max-height: 52px; line-height: 52px; border-bottom: 1px solid #e2e2e2; border-left: none; border-right: none; } 
-
-footer>nav>ol>li.on_list:nth-child(2) { max-height: 242px; transition: max-height 0.2s linear; } 
-footer>nav>ol>li.on_list:nth-child(2)>div.ul_wrap { position: relative; max-height: 156px; transition: max-height 0.2s linear; } 
-footer>nav>ol>li.on_list:nth-child(2)>div.ul_wrap>ul { max-height: 156px; } 
-footer>nav>ol>li.on_list:nth-child(2)>div.ul_wrap>ul>li { max-height: 52px; line-height: 52px; border-bottom: 1px solid #e2e2e2; border-left: none; border-right: none; } 
-
-footer>nav>ol>li.on_list:nth-child(3) { max-height: 242px; transition: max-height 0.2s linear; } 
-footer>nav>ol>li.on_list:nth-child(3)>div.ul_wrap { position: relative; max-height: 156px; transition: max-height 0.2s linear; } 
-footer>nav>ol>li.on_list:nth-child(3)>div.ul_wrap>ul { max-height: 156px; } 
-footer>nav>ol>li.on_list:nth-child(3)>div.ul_wrap>ul>li { max-height: 52px; line-height: 52px; border-bottom: 1px solid #e2e2e2; border-left: none; border-right: none; } 
-
-#backdrop { display: none; } 
-#backdrop.is_active { display: block; width: 100vw; height: calc(100vh - ( 174px + 6vh)); position: fixed; bottom: 87px; left: 0; right: 0; background-color: rgba(216,216,216,0.1); -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px); opacity: 1; z-index: 0; } 
-
-footer>section.navigate { display: flex; flex-wrap: nowrap; justify-content: space-between; padding: 2.5vh 10vw; } 
- .navigate>button[type="button"] { text-indent: -9999px; overflow: hidden; background: url(../images/category.png) no-repeat 0 0; width: 40px; height: 40px; cursor: pointer; transform: scale(1); transition: transform 0.2s ease-in-out; } 
- .navigate>button[type="button"].is_open { background: url(../images/opencate.png) no-repeat 0 0; transform: scale(1.2); transition: transform 0.2s ease-in-out; } 
- .navigate>a.home { background: url(../images/home.png) no-repeat 0 0; text-indent: -9999px; overflow: hidden; width: 40px; transform: scale(1); transition: transform 0.2s ease-in-out; } 
- .navigate>a.home.act { background: url(../images/home_act.png) no-repeat 0 0; text-indent: -9999px; overflow: hidden; width: 40px; transform: scale(1.5); transition: transform 0.2s ease-in-out; } 
- .navigate>a.mypage { background: url(../images/Mypage.png) no-repeat 0 0; text-indent: -9999px; overflow: hidden; width: 40px; transform: scale(1); transition: transform 0.2s ease-in-out; } 
- .navigate>a.mypage.on { background: url(../images/mypage_on.png) no-repeat 0 0; text-indent: -9999px; overflow: hidden; width: 40px; transform: scale(1.5); transition: transform 0.2s ease-in-out; } 

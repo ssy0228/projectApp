@@ -1,0 +1,16 @@
+
+
+
+body { width: 375px; height: 812px; margin: 0 auto; overflow: hidden; font-family: 'Noto Sans KR', sans-serif; }
+
+
+/* layout */
+header { width: 375px; height: 87px; background-color: #1ed761; padding-top: 33px; }
+#header_inner { display: flex; flex-wrap: nowrap; justify-content: space-between; padding: 0 17px 0; }
+#header_inner h1 { color: #fff; line-height: 35px; font-size: 24px; letter-spacing: -1.2px; align-self: flex-end; text-indent: 20px; }
+#header_inner h1>img { width: 42px; height: 36px; }
+#header_inner>a:first-child { align-self: flex-end; }
+#header_inner>a:last-child { display: flex; width: 45px; height: 45px; align-self: flex-end; }
+header>form { width: 100%; height: 55px; margin-top: 7px; padding: 17px 20px 0; display: flex; justify-content: space-between; align-content: flex-end; }
+main { width: 375px; height: 583px; margin-top: 53px; padding: 16px 20px 20px;  }
+footer { width: 375px; height: 87px; background-color: #1ed761; position: relative; }
